@@ -110,7 +110,7 @@ app.use(async (ctx) => {
     return;
   }
 
-  //DELETE
+  // DELETE
   if (ctx.method === 'DELETE') {
     const { id } = ctx.request.query;
     tickets = tickets.filter((item) => item.id !== id);
